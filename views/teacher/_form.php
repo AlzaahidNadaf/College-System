@@ -31,7 +31,7 @@ use kartik\date\DatePicker;
 
     <?= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
-    <?= $form->field($model, 'blood_group')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'blood_group')->dropDownList([0 => 'A+ve',1 =>'A-ve',2 => 'B+ve',3 => 'B-ve',4 => 'O+ve',5 => 'O-ve',6 => 'AB+ve', 7 => 'AB-ve'])->label("Blood Group") ?>
     <?= $form->field($model, 'address')->textInput(['maxlength' => true]) ?>
 
 

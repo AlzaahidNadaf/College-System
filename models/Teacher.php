@@ -36,7 +36,9 @@ class Teacher extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'birthday', 'sex', 'religion', 'blood_group', 'address', 'phone', 'email'], 'required'],
-            [['name', 'birthday', 'sex', 'religion', 'blood_group', 'address', 'phone', 'email'], 'string'],
+            [['name', 'birthday', 'sex', 'religion', 'blood_group', 'address'], 'string'],
+            [['email'], 'email'],
+            [['phone'], 'number'],
             [['created_at', 'updated_at'], 'safe'],
         ];
     }
